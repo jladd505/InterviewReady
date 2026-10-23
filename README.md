@@ -4,7 +4,7 @@ A local interview coach for students and early-career job seekers. Enter a targe
 
 Built for CS4680, Assignment 3: AI Assistant Project. Uses the **Groq API** for live inference. No deployment, database, paid hosting, or package installation is required.
 
-## Run locally (student or grader)
+## Run locally
 
 Prerequisites: **Node.js 22 or newer**, a current browser, and **Make**. Download Node from https://nodejs.org. macOS/Linux generally provide Make through their developer tools; Windows users can use WSL or the Node-only commands below. Internet access is required for live Groq requests, but not the sample interview.
 
