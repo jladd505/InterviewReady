@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20382c">
+  <meta name="description" content="Practice your next job interview with a personal AI coach. Built for thoughtful answers and steady progress.">
+  <title>InterviewReady · Your next chapter starts here</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="InterviewReady home"><span class="brand-icon">ir<span>↗</span></span><span>interview<span class="brand-light">ready</span><span class="brand-dot">.</span></span></a>
+      <div class="workspace-label">YOUR PRACTICE SPACE</div>
+      <nav aria-label="Interview progress">
+        <button id="nav-setup" class="nav-item active" type="button"><span class="nav-icon">01</span> Set the scene <span class="nav-marker">↗</span></button>
+        <button id="nav-practice" class="nav-item" type="button" disabled><span class="nav-icon">02</span> Practice room</button>
+        <button id="nav-results" class="nav-item" type="button" disabled><span class="nav-icon">03</span> Your scorecard</button>
+      </nav>
+      <div class="sidebar-note"><span class="spark">✳</span><p>You don't need the perfect answer.<br><strong>Just a little practice.</strong></p><div class="note-line"></div><small>One question closer to your next chapter.</small></div>
+      <div class="sidebar-bottom"><span class="local-dot"></span> A space to practice, locally.<button id="about-button" type="button">How it works ↗</button></div>
+    </aside>
+    <div class="page">
+      <header class="topbar"><div><span class="breadcrumb">Your workspace</span><span class="slash">/</span><span id="page-name">Interview setup</span></div><span id="connection" class="status"><span class="status-dot"></span> Checking Groq…</span></header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>Built for your next opportunity.</span><span>Powered by Groq <span class="footer-star">✳</span></span></footer>
+    </div>
+  </div>
+  <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="about-dialog">
+    <div class="dialog-inner"><button id="close-about" class="close-button" aria-label="Close" type="button">×</button><span class="eyebrow">A LOOK UNDER THE HOOD</span><h2>Practice with purpose.</h2><p>InterviewReady tailors questions to your target role and gives written feedback using four transparent criteria: relevance, structure, specificity, and clarity.</p><h3>Three prompt engineering patterns</h3><ol><li><strong>Persona:</strong> a constructive interviewer, with clear rules for evidence and scoring.</li><li><strong>Few-shot:</strong> examples of weak and strong answers calibrate feedback.</li><li><strong>Iterative refinement:</strong> revise your answer and the coach compares it with your previous attempt.</li></ol><p>Your final score uses your latest attempt for each answered question. These are practice scores, not hiring predictions.</p><p>Live answers and job descriptions are sent to Groq. Sessions stay in this server’s memory and disappear on restart or after 12 idle hours. The browser remembers the session ID and unsent draft for refresh recovery. Nothing is published.</p><p><strong>Sample mode</strong> uses fixed example questions and feedback without calling Groq; it does not assess your answer.</p></div>
+  </dialog>
+</body>
+</html>
