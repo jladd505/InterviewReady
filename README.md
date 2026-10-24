@@ -80,7 +80,7 @@ The scale is anchored in the prompt: 1 absent/off-topic, 2 vague/incomplete, 3 r
 
 Per-answer score = average of the four scores × 20. Final score = average of all four raw criterion scores across answered questions × 20, rounded to a whole number. Category averages are rounded to one decimal for display only. Only the **latest attempt for each answered question** counts. The revision comparison uses each question's first attempt, rather than assuming a revision must improve. Feedback is coaching guidance; scores are not calibrated hiring probabilities.
 
-## Prompt engineering (course requirement)
+## Prompt engineering
 
 Actual prompts, worked examples, schemas and validation live in `lib/coach.mjs`. The app's **How it works** dialog also explains these patterns for presentation.
 
